@@ -1,0 +1,46 @@
+const database = 'local';
+const collection = 'characters';
+
+// The current database to use.
+use(database);
+
+// Create a new collection.
+// db.createCollection(collection);
+
+// Create a character
+// db.characters.insertOne(
+//     {
+//         realName: "Jenna Ortega",
+//         nickname: "Wandinha Addams",
+//         description: "A protagonista da série é Wandinha Addams, interpretada pela atriz Jenna Ortega. O público acompanha a rotina da menina inexpressiva e gótica, que é enviada para a escola rejeitada de Nevermore Academy devido ao seu jeito excêntrico."
+//     }
+// )
+
+// Create many characters
+// db.characters.insertMany([
+//     {
+//         realName: "Catherine Zeta-Jones",
+//         nickname: "Morticia Addams",
+//         description: "Morticia é a mãe de Wandinha e esposa de Gomez. A personagem é médium e frequentou a mesma escola que a filha, a Nevermore Academy , há 30 anos. Sua filha acaba ficando presa à sombra da mãe."
+//     },
+//     {
+//         realName: "Luis Guzmán",
+//         nickname: "Gomez Addams",
+//         description: "Gomez Addams é o pai da protagonista. É casado com Morticia e bastante apaixonado pela esposa. Ele também carrega uma acusação de crime: Gomez teria assassinado um normie de Jericho há 30 anos."
+//     }
+// ])
+
+// Update character
+// db.characters.updateOne(
+//     { realName: "Jenna Ortega" },
+//     { $set: { description: "[Atualizado] A protagonista da série é Wandinha Addams, interpretada pela atriz Jenna Ortega. O público acompanha a rotina da menina inexpressiva e gótica, que é enviada para a escola rejeitada de Nevermore Academy devido ao seu jeito excêntrico." } }
+// )
+
+// Delete all
+// db.characters.deleteMany({})
+
+// List all characters
+// db.characters.find()
+
+// List all characters starts with J
+// db.characters.find({ realName: { $regex: '^j', $options: 'i' }})
